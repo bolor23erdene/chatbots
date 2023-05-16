@@ -33,5 +33,5 @@ from process import preprocess, load_dataset
 # train_path, test_path = "../data/convai2/train_other_revised_no_cands.txt", "../data/convai2/valid_self_original_no_cands.txt"
 # preprocess(train_path, test_path)
 
-data_path = '../data/convai2_tokenized/'
+data_path = '../data/convai2_prepared/'
 load_dataset(data_path)
