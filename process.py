@@ -58,7 +58,7 @@ def load_dataset(path):
 
 
 # return tokenized and write them into files 
-def preprocess(train_path, val_path, save_path='./convai2_prepared/'):
+def preprocess(train_path, val_path, save_path='../data/convai2_prepared/'):
     # load the data 
     train_query, train_response = load_dataset(train_path) 
     test_query, test_response = load_dataset(val_path)
