@@ -29,8 +29,8 @@ from process import preprocess, load_dataset
 # goal is to create dataset 
 #query:  ["generate a dialog response to [query] based on [persona]: [persona]: i like to remodel homes. i like to go hunting. i like to shoot a bow. my favorite holiday is halloween. [query]:  hi , how are you doing ? i'm getting ready to do some cheetah chasing to stay in shape ."]
 #response:  ['you must be very fast . hunting is one of my favorite hobbies .']
-train_path, test_path = "./convai2/train_other_revised_no_cands.txt", "./convai2/valid_self_original_no_cands.txt"
+train_path, test_path = "../data/convai2/train_other_revised_no_cands.txt", "../data/convai2/valid_self_original_no_cands.txt"
 preprocess(train_path, test_path)
 
-data_path = './convai2_tokenized'
+data_path = '../data/convai2_tokenized'
 load_dataset(data_path)
