@@ -118,7 +118,7 @@ def preprocess(train_path, val_path, save_path='../data/convai2_prepared/'):
         
 def load_dataset(path):
 
-    with open(path + 'train_query.json') as train_query, open(path + 'test_query.json') as val_query:
+    with open(path + 'train_query.json') as train_query and open(path + 'test_query.json') as val_query:
         print("Load train_query")
         tmp = train_query.readline()
         train_query_tokenized = json.loads(tmp)
@@ -126,7 +126,7 @@ def load_dataset(path):
         tmp = val_query.readline()
         val_query_tokenized = json.loads(tmp)
 
-    with open(path + 'train_response.json') as train_response, open(path + 'test_response.json') as val_response:
+    with open(path + 'train_response.json') as train_response and open(path + 'test_response.json') as val_response:
         print("Load train_response")
         tmp = train_response.readline()
         train_response_tokenized = json.loads(tmp)
