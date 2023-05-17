@@ -35,3 +35,11 @@ from process import preprocess, load_dataset
 
 data_path = '../data/convai2_prepared/'
 load_dataset(data_path)
+
+
+# inputs
+# model, train_dataloader, optimizer, scheduler, epoch, args
+
+model.train()
+epoch_start_time = datetime.now()
+total_loss = 0  
